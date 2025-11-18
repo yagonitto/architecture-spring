@@ -4,9 +4,11 @@ import com.example.architecture_spring.todos.TodoEntity;
 import com.example.architecture_spring.todos.TodoValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+@Lazy // (true or false) default is true
 @Component
 @Scope(BeanDefinition.SCOPE_SINGLETON) // default
 //@Scope(WebApplicationContext.SCOPE_APPLICATION)
