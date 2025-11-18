@@ -8,15 +8,41 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ManufacturerConfiguration {
 
-    @Bean
-    public Engine engine() {
+    @Bean(name = "aspiratedEngine")
+    public Engine aspiratedEngine() {
         var engine = new Engine();
 
         engine.setHorsepower(150);
         engine.setCylinders(4);
         engine.setModel("ASP-1500");
-        engine.setLiterage(1.5);
+        engine.setLiterage(1.4);
         engine.setEngineType(EngineType.ASPIRATED);
+
+        return engine;
+    }
+
+    @Bean(name = "electricEngine")
+    public Engine eletricEngine() {
+        var engine = new Engine();
+
+        engine.setHorsepower(230);
+        engine.setCylinders(4);
+        engine.setModel("ELC-2300");
+        engine.setLiterage(1.6);
+        engine.setEngineType(EngineType.ELECTRIC);
+
+        return engine;
+    }
+
+    @Bean(name = "turboEngine")
+    public Engine turboEngine() {
+        var engine = new Engine();
+
+        engine.setHorsepower(200);
+        engine.setCylinders(4);
+        engine.setModel("TRB-1654");
+        engine.setLiterage(1.5);
+        engine.setEngineType(EngineType.TURBOCHARGED);
 
         return engine;
     }
