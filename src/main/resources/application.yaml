@@ -3,3 +3,11 @@ spring:
     name: architecture-spring
   jpa:
     show-sql: true
+  main:
+    lazy-initialization: false
+
+app:
+  config:
+    variable: xyz
+    value: 123
+    foo: bar
