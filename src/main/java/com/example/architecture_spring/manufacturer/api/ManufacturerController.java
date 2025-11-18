@@ -1,6 +1,9 @@
 package com.example.architecture_spring.manufacturer.api;
 
-import com.example.architecture_spring.manufacturer.*;
+import com.example.architecture_spring.manufacturer.CarStatus;
+import com.example.architecture_spring.manufacturer.Engine;
+import com.example.architecture_spring.manufacturer.HondaHRV;
+import com.example.architecture_spring.manufacturer.Key;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
