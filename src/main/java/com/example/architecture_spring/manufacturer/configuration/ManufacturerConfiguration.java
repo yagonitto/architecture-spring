@@ -4,6 +4,7 @@ import com.example.architecture_spring.manufacturer.Engine;
 import com.example.architecture_spring.manufacturer.EngineType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class ManufacturerConfiguration {
@@ -22,7 +23,8 @@ public class ManufacturerConfiguration {
     }
 
     @Bean(name = "electricEngine")
-    public Engine eletricEngine() {
+    @Primary
+    public Engine electricEngine() {
         var engine = new Engine();
 
         engine.setHorsepower(230);
