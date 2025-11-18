@@ -45,4 +45,11 @@ public class Car {
         this.manufacturer = manufacturer;
     }
 
+    public CarStatus ignite(Key key) {
+        if (key.getManufacturer() != this.manufacturer) {
+            return new CarStatus("Wrong key for " + this.manufacturer + " car.");
+        }
+
+        return new CarStatus("Car " + this.model + " started successfully! With engine: " + engine);
+    }
 }

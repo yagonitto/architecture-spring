@@ -48,4 +48,15 @@ public class Engine {
         this.engineType = engineType;
     }
 
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "model='" + model + '\'' +
+                ", horsepower=" + horsepower +
+                ", cylinders=" + cylinders +
+                ", literage=" + literage +
+                ", engineType=" + engineType +
+                '}';
+    }
+
 }
