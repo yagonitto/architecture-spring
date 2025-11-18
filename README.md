@@ -109,8 +109,8 @@ O projeto inclui uma API REST simples para demonstrar os conceitos:
 2\. Clonar o repositório:
 
 ```bash
-git clone <url-do-repositorio>
-cd <pasta-do-projeto>
+git clone https://github.com/yagonitto/architecture-spring.git
+cd architecture-spring
 ```
 
 3\. Executar a aplicação:
